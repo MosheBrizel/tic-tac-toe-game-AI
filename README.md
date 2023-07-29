@@ -33,7 +33,7 @@ python tic_tac_toe_AI.py
 
 ## Code Structure
 
-- `tictactoe.py` - Main code file containing the Tkinter GUI and game logic
+- `tic_tac_toe_AI.py` - Main code file containing the Tkinter GUI and game logic
 - `dict.json` - File for saving computer move information from previous games
 
 Main functions:
