@@ -27,7 +27,7 @@ Simply run the `tic_tac_toe_AI` file to start a new game:
 
 ~`~`
 python tic_tac_toe_AI.py
-~`~` 
+`~`~
 
 
 
