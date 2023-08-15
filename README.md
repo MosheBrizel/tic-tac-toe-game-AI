@@ -13,7 +13,7 @@ This is a single player Tic Tac Toe game against the computer, implemented in Py
 
 - The computer learns and remembers successful and failed moves to improve its ability in future games.
 
-- When there is a winner or tie, the board resets for a new game.
+- When there is a winner or tie, there is a button to start a new game.
 
 ## Requirements
 
@@ -25,9 +25,9 @@ This is a single player Tic Tac Toe game against the computer, implemented in Py
 Simply run the `tic_tac_toe_AI` file to start a new game:
 
 
-~`~`
+~`~
 python tic_tac_toe_AI.py
-`~`~
+~`~
 
 
 
