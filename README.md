@@ -25,9 +25,9 @@ This is a single player Tic Tac Toe game against the computer, implemented in Py
 Simply run the `tic_tac_toe_AI` file to start a new game:
 
 
-~`~
+`~
 python tic_tac_toe_AI.py
-~`~
+~`
 
 
 
