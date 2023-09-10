@@ -1,45 +1,42 @@
-# tic-tac-toe-game-AI
-Python Tic-Tac-Toe game using Tkinter. Play against AI player. The game logic checks for wins and ties. AI uses stored data for intelligent moves. Reset button for new games. Functional and can be improved on GitHub.
+# Tic Tac Toe with Learning AI
 
-## Tic Tac Toe
+A tic tac toe game with a GUI and AI opponent that learns to play better
 
-This is a single player Tic Tac Toe game against the computer, implemented in Python with a graphical user interface using Tkinter.
+## Overview
 
-## Game Description
+This project implements a playable tic tac toe game with a graphical interface. It includes an AI opponent that progressively learns to make better moves based on past games. 
 
-- It's a classic Tic Tac Toe game on a 3x3 board. 
+The purpose is to demonstrate basic reinforcement learning techniques to create an AI agent that improves its strategy through experience.
 
-- The player plays against the computer who chooses moves randomly or based on analysis of previous moves.
+![tic-tac-toe-preview]./tic_tuc_to.gif)
 
-- The computer learns and remembers successful and failed moves to improve its ability in future games.
+## Features
 
-- When there is a winner or tie, there is a button to start a new game.
+- Graphical tic tac toe game board using Tkinter
+- Single or two player modes  
+- Adjustable board size
+- AI opponent with progressive learning
+- Saves learned data to a file
+- Game reset and new game options
 
-## Requirements
+## How It Works 
 
-- Python 3
-- Tkinter, random, json libraries
+The AI player uses a dictionary to store move data based on past game results. It tracks which moves lead to wins vs losses from every board configuration.
 
-## Usage
+Using this data, the AI learns which moves have higher historical win rates. It progressively improves by favoring moves that are more likely to lead to a victory.
 
-Simply run the `tic_tac_toe_AI` file to start a new game:
+The learned move data persists between game sessions by saving to a JSON file. This allows the AI to build on past experience and keep improving.
 
+## Code Details
 
-`~
-python tic_tac_toe_AI.py
-~`
+- `press_bottom()` - Handle player moves  
+- `computer_choice()` - Select AI moves    
+- `check_all()` - Check for win/tie
+- `clear_screen()` - Reset board  
+- `add_value_dict()` - Update move data
 
+The core gameplay loop is in `add_list()`, which processes turns and checks for a winner.
 
+The AI learning happens in `add_value_dict()`, updating the move data dictionary after each game.
 
-## Code Structure
-
-- `tic_tac_toe_AI.py` - Main code file containing the Tkinter GUI and game logic
-- `dict.json` - File for saving computer move information from previous games
-
-Main functions:
-
-- `press_button` - Handles player's move
-- `computer_choice` - Chooses a move for the computer  
-- `check_all` - Checks if there is a winner or tie
-- `add_value_dict` - Updates successful/failed move info for the computer
-- `clear_screen` - Resets the board for a new game
+This implementation shows how basic reinforcement learning can be applied to create a game AI that learns from experience. The GUI and file persistence provide a complete playable game package.
