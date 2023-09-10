@@ -8,7 +8,7 @@ This project implements a playable tic tac toe game with a graphical interface. 
 
 The purpose is to demonstrate basic reinforcement learning techniques to create an AI agent that improves its strategy through experience.
 
-![tic-tac-toe-preview]./tic_tuc_to.gif)
+![tic-tac-toe-preview](https://github.com/MosheBrizel/tic-tac-toe-game-AI/blob/main/tic_tuc_to.gif))
 
 ## Features
 
